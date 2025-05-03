@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Free Fire Diamonds</title>
+    <link rel="stylesheet" href="/ff.css">
+</head>
+<body>
+
+    <div class="checkout-container">
+        <h1>Free Fire Diamonds Checkout</h1>
+
+        <form id="checkout-form">
+            <div class="form-group">
+                <label for="user-id">Free Fire ID:</label>
+                <input type="text" id="user-id" name="user-id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="server">Server:</label>
+                <select id="server" name="server" required>
+                    <option value="asia">Asia</option>
+                    <option value="europe">Europe</option>
+                    <option value="north-america">North America</option>
+                    <option value="south-america">South America</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="diamonds">Number of Diamonds:</label>
+                <input type="number" id="diamonds" name="diamonds" min="1" required>
+                <form id="checkout-form">
+                    <div class="payment-container">
+                      <h2>Complete Your Payment</h2>
+                  
+                      <!-- Payment Option: Bank Transfer -->
+                      <label for="payment-method">
+                        <select id="payment-method" name="payment-method">
+                          <option value="bank-transfer">Bank Transfer</option>
+                        </select>
+                      </label>
+                  
+                      <!-- Bank Transfer Section -->
+                      <div id="bank-transfer" class="payment-method">
+                        <h3>Bank Transfer Details</h3>
+                        <p>After transferring the amount, please upload the payment receipt photo below.</p>
+                  
+                        <!-- Bank Transfer Receipt Upload (Image Only) -->
+                        <label for="transfer-receipt">Upload Payment Receipt (Image Only):</label>
+                        <input type="file" id="transfer-receipt" name="transfer-receipt" accept="image/*" required>
+                  
+                        <!-- Instructions for Bank Transfer -->
+                        <p>Transfer the payment to the following bank account:</p>
+                        <p><strong>Account Name:</strong> John Doe</p>
+                        <p><strong>Account Number:</strong> 1234567890</p>
+                        <p><strong>Bank Name:</strong> ABC Bank</p>
+                      </div>
+                      <li><a href="/submit.html" class="btn-buy">Submit order</a></li>
+                   
+                    </div>
+                  </form>
+            </div>
+
+        </form>
+
+        <div id="confirmation" class="confirmation-message" style="display: none;">
+            <h3>Order Confirmation</h3>
+            <p id="confirmation-text"></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

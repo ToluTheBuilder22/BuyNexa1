@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuyNexa</title>
+    <link rel="stylesheet" href="Checkout.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BuyNexa</div>
+        <nav>
+            <ul>
+                <li><a href="/Home.html">Home</a></li>
+                <li><a href="/Shop.html">Shop</a></li>
+                <li><a href="/About.html">About</a></li>
+                <li><a href="/Contact.html">Contact</a></li>
+                <li><a href="/Cart.html" class="cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="checkout">
+        <h1>Checkout</h1>
+        <form action="order-confirmation.html" method="POST">
+            <div class="form-group">
+                <h2>Billing Details</h2>
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="text" name="address" placeholder="Street Address" required>
+                <input type="text" name="city" placeholder="City" required>
+                <input type="text" name="state" placeholder="State" required>
+            </div>
+            
+            <div class="payment-method">
+                <h2>Payment Method</h2>
+                <label><input type="radio" name="payment" value="card" required> Debit/Credit Card</label>
+                <label><input type="radio" name="payment" value="transfer"> Bank Transfer</label>
+                <label><input type="radio" name="payment" value="cash"> Cash on Delivery</label>
+            </div>
+            
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <p>Wireless Gaming Controller - <strong>₦35,000</strong></p>
+                <p>Pro Gaming Headset - <strong>₦60,000</strong></p>
+                <h3>Total: <strong>₦95,000</strong></h3>
+            </div>
+            
+            <button type="submit" class="confirm-btn">Confirm Order</button>
+        </form>
+    </section>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="/About.html">About Us</a>
+            <a href="/Contact.html">Contact</a>
+            <a href="#">FAQs</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <p>&copy; 2025 BuyNexa. All Rights Reserved.</p>
+    </footer>
+    <div id="cart-items"></div>
+    <!--link to the JS file-->
+    <script src="cod.js"></script>
+</body>
+</html>

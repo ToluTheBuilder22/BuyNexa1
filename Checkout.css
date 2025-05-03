@@ -1,0 +1,193 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  padding-bottom: 80px;
+}
+
+
+header {
+  background-color: #1a1a2e;
+  color: #d4af37;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: sticky;
+  top: 0;
+  z-index: 10; */
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* header nav ul li {
+  margin-right: 20px;
+} */
+
+header nav ul li a {
+  text-decoration: none;
+  color: #d4af37;
+  font-size: 18px;
+ padding: 8px 15px;
+ transition: 0.3s,color 0.3s;
+}
+header nav ul li a:hover,
+header nav ul li a:hover {
+  color: #fff;
+  background-color: #d4af37;
+  border-radius: 5px;
+}
+
+
+.checkout {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
+}
+
+.checkout h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+}
+
+.checkout h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.checkout label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #555;
+  display: block;
+}
+
+.checkout input[type="text"],
+.checkout input[type="email"],
+.checkout input[type="tel"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.checkout input[type="radio"] {
+  margin-right: 5px;
+}
+
+.checkout .order-summary {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.checkout .order-summary h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.checkout .order-summary p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.checkout .order-summary h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1a1a2e;
+}
+
+
+.checkout .confirm-btn {
+  background-color: #1a1a2e;
+  color: #fff;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout .confirm-btn:hover {
+  background-color: #d4af37;
+}
+
+
+footer {
+  background-color: #1a1a2e;
+  color: #d4af37;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .footer-links {
+  margin-bottom: 10px;
+}
+
+footer .footer-links a {
+  color: #d4af37;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+footer .footer-links a:hover {
+  color: #fff;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .checkout {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .checkout h1 {
+    font-size: 28px;
+  }
+
+  .checkout label,
+  .checkout input[type="text"],
+  .checkout input[type="email"],
+  .checkout input[type="tel"] {
+    font-size: 14px;
+  }
+
+  .checkout .order-summary h3 {
+    font-size: 18px;
+  }
+
+  .checkout .confirm-btn {
+    font-size: 16px;
+  }
+}
