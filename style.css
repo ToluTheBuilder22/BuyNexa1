@@ -14,9 +14,12 @@ header {
   background-color: #1a1a2e;
   color: #d4af37;
   text-align: center;
-  padding: 15px 40px;
+  padding: 10px 0px;
   justify-content: space-between;
   display: flex;
+  max-width: 100%;
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 
 nav ul {
