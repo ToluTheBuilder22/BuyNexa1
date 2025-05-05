@@ -219,3 +219,9 @@ footer p{
 .social-icons a:hover {
   color: #d4af37;
 }
+body{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
